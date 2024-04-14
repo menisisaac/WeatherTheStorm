@@ -8605,6 +8605,7 @@ MonoBehaviour:
   _goldController: {fileID: 1661410474484577854}
   _turnController: {fileID: 1852985477050074537}
   _houseController: {fileID: 764557229}
+  _houseSelectionUI: {fileID: 212505052}
 --- !u!4 &1477911651
 Transform:
   m_ObjectHideFlags: 0

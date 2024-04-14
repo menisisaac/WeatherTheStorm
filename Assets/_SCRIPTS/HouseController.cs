@@ -28,6 +28,8 @@ public class HouseController : MonoBehaviour
 
     private bool isHouseTypeSet = false;
 
+    
+
 
 
     // Start is called before the first frame update
@@ -70,5 +72,10 @@ public class HouseController : MonoBehaviour
         houseHealthValue = houseHealthMaximumValue;
         isHouseTypeSet = true;
 
+    }
+
+    public int GetHouseTypeValue()
+    {
+        return houseType;
     }
 }

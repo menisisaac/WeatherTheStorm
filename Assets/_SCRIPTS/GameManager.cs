@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     private TurnController _turnController;
     [SerializeField]
     private HouseController _houseController;
+    [SerializeField]
+    private GameObject _houseSelectionUI;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +22,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (_houseController.GetHouseTypeValue() != 0)
+        {
+            _houseSelectionUI.SetActive(false); // if no value, then deactivate the ui selection ui
+        }
     }
 
 
