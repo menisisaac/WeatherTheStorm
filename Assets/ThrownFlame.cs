@@ -23,7 +23,7 @@ public class ThrownFlame : MonoBehaviour
         float distance = Vector2.Distance(magnet.position, transform.position);
         if(distance > 5) {
             Vector2 direction = magnet.position - transform.position;
-            m_Rigidbody.AddForce(direction * m_Thrust);
+            m_Rigidbody.AddForce(direction / m_Thrust);
         } else {
             m_Rigidbody.velocity = Vector2.zero;
         }
