@@ -8,18 +8,20 @@ using UnityEngine.UI;
 public class GoldController : MonoBehaviour
 {
     // pre start
-    private int Gold; // get
+    private int PlayerGoldTotal; // get
     [SerializeField]
     private GameObject GoldTextObject;
     [SerializeField]
     private TMP_Text GoldText;
 
+    private int MaximumGoldTotal = 100;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
-        Gold = 0;// intialize gold
-        GoldText.text = Gold.ToString();
+        PlayerGoldTotal = 10;// intialize gold
 
         // per turn = 10 gold
 
@@ -29,6 +31,14 @@ public class GoldController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        GoldText.text = PlayerGoldTotal.ToString();
+
     }
+
+
+    public void AddMaximumGoldTotal()
+    {
+        PlayerGoldTotal += MaximumGoldTotal;
+    }
+    
 }

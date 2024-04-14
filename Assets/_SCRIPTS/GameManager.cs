@@ -12,7 +12,6 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InitializeComponents();
         
     }
 
@@ -23,10 +22,12 @@ public class GameManager : MonoBehaviour
     }
 
 
-    public void InitializeComponents()
+
+    public void IncrimentTurn()
     {
-        _goldController = GetComponent<GoldController>();
-        _turnController = GetComponent<TurnController>();
+        _turnController.IncrimentTurn(1);
+
+        // call other methods her (ie: natural disasters)
 
     }
 }
