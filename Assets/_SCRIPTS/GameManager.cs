@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
     private TurnController _turnController;
     [SerializeField]
     private HouseController _houseController;
+    
+    //[SerializeField]
+    //private LevelController _levelController;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +34,8 @@ public class GameManager : MonoBehaviour
         _goldController.AddGoldOnTurn(10);
 
         // call other methods her (ie: natural disasters)
-
+        // Implement method for increasing level; default is 1.
+        //_levelController.AddLevelOnTurn(1);
 
     }
 
@@ -48,6 +52,11 @@ public class GameManager : MonoBehaviour
     public void ChooseMetalHouse()
     {
         _houseController.SelectMetalHouse(3);
+    }
+
+    public void ChooseLevel()
+    {
+        // Add code.
     }
 }
 
