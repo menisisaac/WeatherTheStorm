@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
     private TurnController _turnController;
     [SerializeField]
     private HouseController _houseController;
+
+    [SerializeField]
+    private GameObject _houseSelectionUI;
     
     //[SerializeField]
     //private LevelController _levelController;

@@ -7,6 +7,11 @@ public class TsunamiMovementVertical : MonoBehaviour
     // GameManager levelController;
     public float forceMagnitude = 6f; // * levelController; // Adjust this value to apply a "huge" force
 
+    private void Start()
+    {
+        ApplyTsunamiForceVertically();
+    }
+
     void Awake() {
         // Cache the Rigidbody2D component
         rb = GetComponent<Rigidbody2D>();
