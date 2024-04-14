@@ -24,8 +24,7 @@ public class GameManager : MonoBehaviour
     }
 
 
-
-    public void IncrimentTurn()
+    private void IncrimentTurn()
     {
         _turnController.IncrimentTurn(1);
 
@@ -34,6 +33,21 @@ public class GameManager : MonoBehaviour
         // call other methods her (ie: natural disasters)
 
 
+    }
+
+    private void ChooseWoodHouse()
+    {
+        _houseController.SelectWoodHouse(1);
+    }
+
+    private void ChooseStoneHouse()
+    {
+        _houseController.SelectStoneHouse(2);
+    }
+
+    private void ChooseMetalHouse()
+    {
+        _houseController.SelectMetalHouse(3);
     }
 }
 

@@ -5,16 +5,19 @@ using UnityEngine;
 public class HouseController : MonoBehaviour
 {
     // house types
-    // wood = 1
+    // wood = 1; health = 10
     private int woodHouse = 1;
 
-    // stone = 2
+    // stone = 2; health 30
     private int stoneHouse = 2;
 
-    // metal = 3
+    // metal = 3; health 50
     private int metalHouse = 3;
 
-    private int houseType; 
+    private int houseType;
+
+    private int houseHealthValue; 
+
 
 
 
@@ -28,5 +31,24 @@ public class HouseController : MonoBehaviour
     void Update()
     {
         
+    }
+
+
+    public void SelectWoodHouse(int value)
+    {
+        houseType = value;
+        houseHealthValue = 10;
+
+    }
+    public void SelectStoneHouse(int value)
+    {
+        houseType = value;
+        houseHealthValue = 30;
+
+    }
+    public void SelectMetalHouse(int value)
+    {
+        houseType = value;
+        houseHealthValue = 50;
     }
 }
