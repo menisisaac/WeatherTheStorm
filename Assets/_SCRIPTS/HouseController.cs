@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+
 
 public class HouseController : MonoBehaviour
 {
@@ -16,21 +18,23 @@ public class HouseController : MonoBehaviour
 
     private int houseType;
 
-    private int houseHealthValue; 
+    private int houseHealthValue;
 
+    [SerializeField]
+    private TMP_Text houseHealthText;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        houseHealthValue = 100;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        houseHealthText.text = houseHealthValue.ToString() + "%";
     }
 
 

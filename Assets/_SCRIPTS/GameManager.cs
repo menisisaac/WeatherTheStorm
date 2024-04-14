@@ -35,17 +35,17 @@ public class GameManager : MonoBehaviour
 
     }
 
-    private void ChooseWoodHouse()
+    public void ChooseWoodHouse()
     {
         _houseController.SelectWoodHouse(1);
     }
 
-    private void ChooseStoneHouse()
+    public void ChooseStoneHouse()
     {
         _houseController.SelectStoneHouse(2);
     }
 
-    private void ChooseMetalHouse()
+    public void ChooseMetalHouse()
     {
         _houseController.SelectMetalHouse(3);
     }
