@@ -24,35 +24,51 @@ public class HouseController : MonoBehaviour
     private TMP_Text houseHealthText;
 
 
+    private int houseHealthMaximumValue;
+
+    private bool isHouseTypeSet = false;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
-        houseHealthValue = 100;
+        houseHealthValue = houseHealthMaximumValue;
     }
 
     // Update is called once per frame
     void Update()
     {
-        houseHealthText.text = houseHealthValue.ToString() + "%";
+        if (isHouseTypeSet) // if house value is set, then try it
+        {
+            houseHealthText.text = ((houseHealthValue/houseHealthMaximumValue) * 100).ToString() + "%";
+        }
+        
     }
 
 
     public void SelectWoodHouse(int value)
     {
         houseType = value;
-        houseHealthValue = 10;
+        houseHealthMaximumValue = 10;
+        houseHealthValue = houseHealthMaximumValue;
+        isHouseTypeSet = true;
 
     }
     public void SelectStoneHouse(int value)
     {
         houseType = value;
-        houseHealthValue = 30;
+        houseHealthMaximumValue = 30;
+        houseHealthValue = houseHealthMaximumValue;
+        isHouseTypeSet = true;
 
     }
     public void SelectMetalHouse(int value)
     {
         houseType = value;
-        houseHealthValue = 50;
+        houseHealthMaximumValue = 50;
+        houseHealthValue = houseHealthMaximumValue;
+        isHouseTypeSet = true;
+
     }
 }

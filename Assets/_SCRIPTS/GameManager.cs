@@ -49,5 +49,7 @@ public class GameManager : MonoBehaviour
     {
         _houseController.SelectMetalHouse(3);
     }
+
+
 }
 
