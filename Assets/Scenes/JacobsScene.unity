@@ -8294,6 +8294,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f850a19c79136e74a9a2da0f3b66c3c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  houseControllerUICanvas: {fileID: 928720321363482104}
+  mainMenuCanvas: {fileID: 939227046}
+  faderCanvas: {fileID: 286443496}
 --- !u!1 &1074914945
 GameObject:
   m_ObjectHideFlags: 0
@@ -9614,7 +9617,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5288009841298839779}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 939227051}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1377916672879515033
 CanvasRenderer:
   m_ObjectHideFlags: 0

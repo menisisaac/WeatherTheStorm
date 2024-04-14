@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,11 +9,11 @@ using UnityEngine.UI;
 public class MainMenu : MonoBehaviour
 {
 
-    private Button startButton;
-    private Button exitButton;
-
+    [SerializeField]
     private GameObject houseControllerUICanvas;
+    [SerializeField]
     private GameObject mainMenuCanvas;
+    [SerializeField]
     private GameObject faderCanvas;
 
 
@@ -31,7 +32,9 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        
+        houseControllerUICanvas.SetActive(true);
+        faderCanvas.SetActive(false);// potentally fade out over time, turn opacity to 0 over time
+        this.mainMenuCanvas.SetActive(false);
     }
 
     public void ExitGame()
