@@ -4,6 +4,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TurnController : MonoBehaviour
 {
@@ -35,7 +36,7 @@ public class TurnController : MonoBehaviour
     public void IncrimentTurn(int value)
     {
         TurnValue += value;
-
+        SceneManager.LoadScene("cloud background");
         // call other methods her (ie: natural disasters)
         
     }

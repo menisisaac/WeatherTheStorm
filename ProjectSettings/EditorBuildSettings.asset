@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/JacobsScene.unity
+    guid: 4c8963dcaeda1c24abc6209e27e70951
+  - enabled: 1
+    path: Assets/cloud background.unity
+    guid: 8b0521530207741008f11c1a8198f925
   m_configObjects: {}

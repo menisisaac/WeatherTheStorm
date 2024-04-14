@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+#pragma warning disable 0169
+#pragma warning disable 0649
 
 public class HouseController : MonoBehaviour
 {
@@ -29,7 +31,15 @@ public class HouseController : MonoBehaviour
     private bool isHouseTypeSet = false;
 
     
-
+    int getA() {
+        return woodHouse;
+    }
+    int getB() {
+        return stoneHouse;
+    }
+    int getC() {
+        return metalHouse;
+    }
 
 
     // Start is called before the first frame update
