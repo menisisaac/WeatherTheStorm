@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     private GoldController _goldController;
     [SerializeField]
     private TurnController _turnController;
+    [SerializeField]
+    private HouseController _houseController;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +29,10 @@ public class GameManager : MonoBehaviour
     {
         _turnController.IncrimentTurn(1);
 
+        _goldController.AddGoldOnTurn(10);
+
         // call other methods her (ie: natural disasters)
+
 
     }
 }

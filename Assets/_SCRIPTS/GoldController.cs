@@ -40,5 +40,11 @@ public class GoldController : MonoBehaviour
     {
         PlayerGoldTotal += MaximumGoldTotal;
     }
+
+
+    public void AddGoldOnTurn(int value)
+    {
+        PlayerGoldTotal += value;
+    }
     
 }
